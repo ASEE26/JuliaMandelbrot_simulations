@@ -61,5 +61,12 @@ Complejo &operator *(const Complejo & c1, const Complejo &c2){
 	
 	return *(new Complejo(real,imag));
 }
+//---------Sobrecarga del operador =--------------------
+Complejo Complejo::operator =(const Complejo &c1){
+	double real=c1.real;
+	double imag=c1.imaginaria;
+	
+	return *(new Complejo(real, imag));
+}
 
 
