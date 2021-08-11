@@ -20,6 +20,8 @@ class Complejo{
 		
 		void MostrarComplejo();
 		
+		Complejo operator =(const Complejo &);      //Sobrecarga de operador =
+
 		double setReal(const double);
         const double getReal() const; 
         
