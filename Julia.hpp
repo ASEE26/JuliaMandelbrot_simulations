@@ -1,3 +1,7 @@
+/*
+Clase Julia: Es una clase hija que esta obligada a implementar el metodo
+para imprimir y pintar el conjunto, en esta clase se trabaja con miembros de datos del tipo complejos.
+*/
 #include "Complejo.hpp"
 #include "Conjunto.hpp"
 
