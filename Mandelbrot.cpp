@@ -40,9 +40,8 @@ void Mandelbrot::setImprimirConjunto(Complejo &c1){
 			this->Z0.setReal(C.getReal());
 			this->Z0.setImag(C.getImag());
 			
-			int iteracion = 0;	
-	    	while(iteracion < this->Maxiteraciones){
-		
+			int iteracion = 0;
+			for(iteracion = 0; iteracion < this->Maxiteraciones; iteracion++){		
 		    this->Z = Z0*Z0;
 		    this->Znuevo = Z + C;
 		    
@@ -50,9 +49,7 @@ void Mandelbrot::setImprimirConjunto(Complejo &c1){
 			al conjunto y pasamos a estudiar el siguiente pixel*/
 			if(Znuevo.getMagnitud() > 4){ 
 				break;
-			}
-			iteracion++;
-			
+			}			
 		    	this->Z0.setReal(this->Znuevo.getReal());
 		    	this->Z0.setImag(this->Znuevo.getImag());
 		   
