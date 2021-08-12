@@ -1,9 +1,16 @@
+/*
+Clase Conjunto: Es  una clase abstracta
+que obliga implementar algunos metodos en sus clases hijas:
+Conjunto de mandelbrot
+Conjunto de Julia
+
+*/
 #include "miniwin.h"
 #include "Complejo.hpp"
 
 using namespace miniwin;
 
-#define DIM 640 //Tamaño de ancho,alto de la ventana
+#define DIM 640 //Tamaï¿½o de ancho,alto de la ventana
 #ifndef CONJUNTO
 #define CONJUNTO
 
