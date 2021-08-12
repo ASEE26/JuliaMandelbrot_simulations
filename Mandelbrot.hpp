@@ -1,3 +1,10 @@
+/*
+Esta es la clase hija Conjunto de Mandelbrot
+implementa una función miembro que pinta el propio
+Conjunto de Mandelbrot y utiliza como miembros de datos 
+objetos del tipo Complejo
+*/
+
 #include "Complejo.hpp"
 #include "Conjunto.hpp"
 
