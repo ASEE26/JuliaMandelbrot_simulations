@@ -46,7 +46,7 @@ void Mandelbrot::setImprimirConjunto(Complejo &c1){
 			
 			int iteracion = 0;
 			int maxIteracions = this->Maxiteraciones;
-			for(iteracion = 0; iteracion < iteraciones; iteracion++){		
+			for(iteracion = 0; iteracion < maxIteracions; iteracion++){		
 		    this->Z = Z0*Z0;
 		    this->Znuevo = Z + C;
 		    
