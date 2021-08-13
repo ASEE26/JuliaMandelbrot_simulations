@@ -59,7 +59,7 @@ void Mandelbrot::setImprimirConjunto(Complejo &c1){
 		    	this->Z0.setImag(this->Znuevo.getImag());
 
 				cout<<"Iteracion : "<<iteraciones<<endl;
-				iteracion = iteraciones
+				iteracion = iteraciones;
 		   
 		    }
 		    
