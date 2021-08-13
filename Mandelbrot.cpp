@@ -2,6 +2,10 @@
 #include "Mandelbrot.hpp"
 #include "miniwin.h"
 
+#include <iostream>
+using std::cout;
+using std::endl;
+
 using namespace miniwin;
 
 //---------Inicializacion de las variables de tipo static-------
@@ -41,7 +45,8 @@ void Mandelbrot::setImprimirConjunto(Complejo &c1){
 			this->Z0.setImag(C.getImag());
 			
 			int iteracion = 0;
-			for(iteracion = 0; iteracion < this->Maxiteraciones; iteracion++){		
+			int maxIteracions = this->Maxiteraciones;
+			for(iteracion = 0; iteracion < iteraciones; iteracion++){		
 		    this->Z = Z0*Z0;
 		    this->Znuevo = Z + C;
 		    
@@ -52,6 +57,8 @@ void Mandelbrot::setImprimirConjunto(Complejo &c1){
 			}			
 		    	this->Z0.setReal(this->Znuevo.getReal());
 		    	this->Z0.setImag(this->Znuevo.getImag());
+
+				cout<<"Iteracion : "<<iteracion<<endl;
 		   
 		    }
 		    
