@@ -45,7 +45,7 @@ int main(){
     Fractal3 =0; */
     
     
-    Mandelbrot *Fractal = new Mandelbrot(500);   
+    Mandelbrot *Fractal = new Mandelbrot(2);   
     Fractal->setImprimirConjunto(*c1);
     
     delete Fractal;
